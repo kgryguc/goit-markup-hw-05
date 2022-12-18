@@ -107,6 +107,22 @@ body {
   text-decoration: none;
 }
 
+.nav-current {
+  color: var(--main-brand-color);
+  position: relative;
+}
+
+.nav-current::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-bottom: 4px solid var(--main-brand-color);
+  border-radius: 2px;
+  top: 47px;
+  bottom: 0;
+}
+
 .header-contact {
   color: var(--alternative-text-color-grey);
   font-weight: 500;
