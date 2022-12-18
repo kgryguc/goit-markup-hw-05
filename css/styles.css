@@ -67,6 +67,13 @@ body {
   padding-bottom: 94px;
 }
 
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 /* HEADER*/
 
 .header-padding-border {
@@ -239,11 +246,23 @@ body {
   gap: 30px;
 }
 
-.section-title {
-  font-size: 36px;
+.showcase-item {
+  position: relative;
+  font-size: 0;
+}
+
+.showcase-description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #2f303ae0;
+  color: var(--alternative-text-color-white);
+  font-size: 14px;
   font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   text-align: center;
-  margin-bottom: 50px;
+  padding: 27px 0;
 }
 
 /* OUR TEAM */
