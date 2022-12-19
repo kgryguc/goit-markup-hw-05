@@ -203,6 +203,56 @@ body {
   padding: 10px 40px;
 }
 
+/* MODAL */
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition-property: visibility, opacity;
+  transition-duration: 400ms;
+  transition-timing-function: ease-in-out;
+}
+
+.modal-backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000033;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.modal-window {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  background: var(--alternative-background-color-white);
+  box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
+  border-radius: 4px;
+  transition: transform 400ms;
+}
+
+.modal-backdrop.is-hidden .modal-window {
+  transform: scale(0.75);
+}
+
+.modal-exit-button {
+  background-color: var(--alternative-background-color-white);
+  border-radius: 50%;
+  border: 1px solid #0000001a;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
 /* OUR ADVANTAGES */
 
 .advantages {
